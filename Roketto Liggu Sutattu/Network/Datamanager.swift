@@ -10,7 +10,7 @@ import Foundation
 
 class Datamanager {
     
-    static let apiURL
+    static let apiURL = "https://api.rocketleaguestats.com/v1/"
     class func request() {
         
     }
