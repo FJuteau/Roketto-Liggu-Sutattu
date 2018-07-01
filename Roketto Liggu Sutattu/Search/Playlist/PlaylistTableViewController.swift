@@ -11,15 +11,13 @@ import UIKit
 
 class PlaylistTableViewController: UITableViewController {
   
-    var playlists = ["Ranked Doubles 2v2",
-                     "Ranked Standard 3v3",
-                     "Un-Ranked",
-                     "Ranked Duel 1v1",
-                     "Ranked Solo Standard 3v3"]
+  var playlists: [Playlist] = []
   
     override func viewDidLoad() {
         super.viewDidLoad()
 
+      playlists = Datamanager.requestPlaylists()
+      
       tableView.register(PlaylistTableViewCell.nib, forCellReuseIdentifier: PlaylistTableViewCell.storyBoardIdentifier)
       
       

@@ -17,11 +17,7 @@ class PlaylistTableViewCell: UITableViewCell {
   @IBOutlet weak var percentToTheTopLabel: UILabel!
   @IBOutlet weak var nbOfGamesLabel: UILabel!
   
-  
-  
-  
-
-  @IBOutlet private weak var rankTitleLabel: UILabel!
+  var model: Playlist?
   
   public static var nib: UINib {
     return UINib.init(nibName: storyBoardIdentifier, bundle: Bundle(for: self))
@@ -36,8 +32,14 @@ class PlaylistTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-  func configure(with string: String) {
-    rankTitleLabel.text = string
+  func configure(with playlist: Playlist ) {
+    rankTypeLabel.text = playlist.rankType
+    rankLabel.text = "\(playlist.rankLeagueName) \(playlist.rankLeague) Division \(playlist.rankDivision)"
+    mmrLabel.text = String(playlist.rating)
+    percentToTheTopLabel.text = "(Top \(playlist.topRating)%)"
+    
+    model = playlist
   }
   
 }
+
