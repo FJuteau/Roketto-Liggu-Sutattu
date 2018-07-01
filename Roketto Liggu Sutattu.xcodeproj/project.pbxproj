@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E25F92782006AAD5003542E6 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F92772006AAD5003542E6 /* Playlist.swift */; };
 		422F999A20027EF5004AB996 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F999920027EF5004AB996 /* SearchViewController.swift */; };
 		422F999E2002846E004AB996 /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F999C2002846E004AB996 /* PlaylistTableViewController.swift */; };
 		422F99A420028515004AB996 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F99A220028515004AB996 /* PlaylistTableViewCell.swift */; };
 		422F99A520028515004AB996 /* PlaylistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422F99A320028515004AB996 /* PlaylistTableViewCell.xib */; };
+		4233809D20E90AB00014C9D7 /* RankedSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233809C20E90AB00014C9D7 /* RankedSeason.swift */; };
+		E25F92782006AAD5003542E6 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F92772006AAD5003542E6 /* Playlist.swift */; };
 		E28A6550200262E800843711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A654F200262E800843711 /* AppDelegate.swift */; };
 		E28A6552200262E800843711 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A6551200262E800843711 /* ViewController.swift */; };
 		E28A6555200262E800843711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28A6553200262E800843711 /* Main.storyboard */; };
@@ -41,11 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E25F92772006AAD5003542E6 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Playlist.swift; path = Model/Playlist.swift; sourceTree = "<group>"; };
 		422F999920027EF5004AB996 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		422F999C2002846E004AB996 /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
 		422F99A220028515004AB996 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
 		422F99A320028515004AB996 /* PlaylistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistTableViewCell.xib; sourceTree = "<group>"; };
+		4233809C20E90AB00014C9D7 /* RankedSeason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RankedSeason.swift; path = "Roketto Liggu Sutattu/Search/Playlist/RankedSeason.swift"; sourceTree = SOURCE_ROOT; };
+		E25F92772006AAD5003542E6 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Playlist.swift; path = Model/Playlist.swift; sourceTree = "<group>"; };
 		E28A654C200262E800843711 /* Roketto Liggu Sutattu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roketto Liggu Sutattu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A654F200262E800843711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28A6551200262E800843711 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				422F99A220028515004AB996 /* PlaylistTableViewCell.swift */,
 				422F99A320028515004AB996 /* PlaylistTableViewCell.xib */,
+				4233809C20E90AB00014C9D7 /* RankedSeason.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				E28A65822002635600843711 /* Datamanager.swift in Sources */,
 				E28A6552200262E800843711 /* ViewController.swift in Sources */,
 				E28A6550200262E800843711 /* AppDelegate.swift in Sources */,
+				4233809D20E90AB00014C9D7 /* RankedSeason.swift in Sources */,
 				E25F92782006AAD5003542E6 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
