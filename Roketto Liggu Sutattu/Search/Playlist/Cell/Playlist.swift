@@ -18,5 +18,8 @@ struct Playlist {
     let topRating: Int
     
     let rankImageUrlString: String
-    
+  
+  init(with rankedSeason: RankedSeason) {
+    <#statements#>
+  }
 }
