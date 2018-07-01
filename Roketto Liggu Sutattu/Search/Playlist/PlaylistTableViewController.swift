@@ -16,7 +16,7 @@ class PlaylistTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      playlists = Datamanager.requestPlaylists()
+      playlists = PlaylistRepository().requestPlaylists(for: 76561197970090670, platformId: 1)
       
       tableView.register(PlaylistTableViewCell.nib, forCellReuseIdentifier: PlaylistTableViewCell.storyBoardIdentifier)
       

@@ -12,6 +12,7 @@
 		422F99A420028515004AB996 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F99A220028515004AB996 /* PlaylistTableViewCell.swift */; };
 		422F99A520028515004AB996 /* PlaylistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422F99A320028515004AB996 /* PlaylistTableViewCell.xib */; };
 		4233809D20E90AB00014C9D7 /* RankedSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233809C20E90AB00014C9D7 /* RankedSeason.swift */; };
+		4233809F20E9104C0014C9D7 /* PlaylistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233809E20E9104C0014C9D7 /* PlaylistRepository.swift */; };
 		E25F92782006AAD5003542E6 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F92772006AAD5003542E6 /* Playlist.swift */; };
 		E28A6550200262E800843711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A654F200262E800843711 /* AppDelegate.swift */; };
 		E28A6552200262E800843711 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A6551200262E800843711 /* ViewController.swift */; };
@@ -46,8 +47,9 @@
 		422F999C2002846E004AB996 /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
 		422F99A220028515004AB996 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
 		422F99A320028515004AB996 /* PlaylistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistTableViewCell.xib; sourceTree = "<group>"; };
-		4233809C20E90AB00014C9D7 /* RankedSeason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RankedSeason.swift; path = "Roketto Liggu Sutattu/Search/Playlist/RankedSeason.swift"; sourceTree = SOURCE_ROOT; };
-		E25F92772006AAD5003542E6 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Playlist.swift; path = Model/Playlist.swift; sourceTree = "<group>"; };
+		4233809C20E90AB00014C9D7 /* RankedSeason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RankedSeason.swift; path = "Roketto Liggu Sutattu/Search/Playlist/Network/RankedSeason.swift"; sourceTree = SOURCE_ROOT; };
+		4233809E20E9104C0014C9D7 /* PlaylistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRepository.swift; sourceTree = "<group>"; };
+		E25F92772006AAD5003542E6 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		E28A654C200262E800843711 /* Roketto Liggu Sutattu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roketto Liggu Sutattu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A654F200262E800843711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28A6551200262E800843711 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		422F99A0200284C3004AB996 /* Playlist */ = {
 			isa = PBXGroup;
 			children = (
+				423380A020E912010014C9D7 /* Network */,
 				422F99A1200284E1004AB996 /* Cell */,
 				422F999C2002846E004AB996 /* PlaylistTableViewController.swift */,
 			);
@@ -111,11 +114,20 @@
 		422F99A1200284E1004AB996 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				E25F92772006AAD5003542E6 /* Playlist.swift */,
 				422F99A220028515004AB996 /* PlaylistTableViewCell.swift */,
 				422F99A320028515004AB996 /* PlaylistTableViewCell.xib */,
-				4233809C20E90AB00014C9D7 /* RankedSeason.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		423380A020E912010014C9D7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4233809E20E9104C0014C9D7 /* PlaylistRepository.swift */,
+				4233809C20E90AB00014C9D7 /* RankedSeason.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		E28A6543200262E800843711 = {
@@ -176,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				E28A65812002635500843711 /* Datamanager.swift */,
-				E25F92772006AAD5003542E6 /* Playlist.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -321,6 +332,7 @@
 				422F99A420028515004AB996 /* PlaylistTableViewCell.swift in Sources */,
 				E28A6558200262E800843711 /* Roketto_Liggu_Sutattu.xcdatamodeld in Sources */,
 				E28A65822002635600843711 /* Datamanager.swift in Sources */,
+				4233809F20E9104C0014C9D7 /* PlaylistRepository.swift in Sources */,
 				E28A6552200262E800843711 /* ViewController.swift in Sources */,
 				E28A6550200262E800843711 /* AppDelegate.swift in Sources */,
 				4233809D20E90AB00014C9D7 /* RankedSeason.swift in Sources */,
